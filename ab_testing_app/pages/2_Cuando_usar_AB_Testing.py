@@ -6,18 +6,37 @@ from src.ui.styles import apply_base_styles
 
 
 st.set_page_config(
-    page_title="Cuándo usar A/B Testing | A/B Testing",
+    page_title="A/B Testing",
     page_icon="🧭",
     layout="wide",
 )
 apply_base_styles()
 
 page_header(
-    title="¿Cuándo conviene usar A/B Testing?",
+    title="A/B Testing",
     subtitle=(
         "Del caso de la landing page a otras decisiones de marketing que pueden "
         "evaluarse experimentalmente."
     ),
+)
+
+info_box(
+    title="Del debate a la experimentación",
+    body=(
+        "En la página anterior vimos que una decisión de marketing puede tomarse "
+        "desde distintos criterios: intuición directiva, criterio creativo, "
+        "consulta informal, aversión al riesgo o comparación experimental. Todas "
+        "estas perspectivas pueden aportar elementos útiles, pero ninguna permite "
+        "estimar por sí sola si la nueva landing page producirá más conversiones "
+        "que la versión actual."
+    ),
+)
+
+methodological_note(
+    "Para saber si la versión B realmente mejora el desempeño, necesitamos mostrar "
+    "ambas versiones a usuarios reales bajo condiciones comparables. Esa es la idea "
+    "central del A/B Testing: no elegir solo la alternativa que parece mejor, sino "
+    "observar cuál genera mejores resultados cuando se controla la comparación."
 )
 
 st.write(
